@@ -1,102 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXJE0MSTPS"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CXJE0MSTPS');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kairo Music | DJ, Remixes & Productions</title>
 
-<!-- ✅ Google Analytics NOVO -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXJE0MSTPS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CXJE0MSTPS');
-</script>
-
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    background: #0a0a0a;
-    color: white;
-    text-align: center;
+
+body{
+margin:0;
+font-family:'Orbitron',sans-serif;
+background:#0a0a0a;
+color:white;
+text-align:center;
 }
 
-header {
-    padding: 40px 20px;
+header{
+padding:40px 20px;
 }
 
-h1 {
-    font-size: 32px;
-    color: #00f7ff;
+h1{
+font-size:32px;
+color:#00f7ff;
 }
 
-p {
-    color: #ccc;
+p{
+color:#ccc;
 }
 
-.btn {
-    display: inline-block;
-    margin: 15px;
-    padding: 12px 25px;
-    border-radius: 30px;
-    background: #00f7ff;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+.btn{
+display:inline-block;
+margin:15px;
+padding:12px 25px;
+border-radius:30px;
+background:#00f7ff;
+color:black;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
 }
 
-.btn:hover {
-    background: #ff00c8;
-    color: white;
+.btn:hover{
+background:#ff00c8;
+color:white;
 }
 
-/* 🔥 LOGO */
+/* Logo */
 .logo-topo{
-    width:180px;
-    display:block;
-    margin:20px auto;
-    border-radius:50%;
-    box-shadow:0 0 25px #00f7ff;
+width:180px;
+display:block;
+margin:20px auto;
+border-radius:50%;
+box-shadow:0 0 25px #00f7ff;
 }
 
-footer {
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 14px;
-    color: #777;
+footer{
+margin-top:50px;
+padding:20px;
+font-size:14px;
+color:#777;
 }
+
+.visitas{
+margin-top:30px;
+font-size:18px;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo-kairo.png" alt="Kairo Music" class="logo-topo">
-    <h1>KAIRO MUSIC</h1>
-    <p>Official DJ • EDM • Car Music • Remixes • Sertanejo Rock • Electronic Vibes 🚀</p>
 
-    <a class="btn" href="https://youtube.com/@cairo-music" target="_blank">YouTube</a>
-    <a class="btn" href="https://on.soundcloud.com/DPP2Xs65O6r3kTinta" target="_blank">SoundCloud</a>
-    <a class="btn" href="https://www.instagram.com/cairo.spk" target="_blank">Instagram</a>
-    <a class="btn" href="https://www.tiktok.com/@cairo.spk" target="_blank">TikTok</a>
+<img src="logo-kairo.png" alt="Kairo Music" class="logo-topo">
+
+<h1>KAIRO MUSIC</h1>
+
+<p>
+Official DJ • EDM • Car Music • Remixes • Sertanejo Rock • Electronic Vibes 🚀
+</p>
+
+<a class="btn" href="https://youtube.com/@cairo-music" target="_blank">YouTube</a>
+
+<a class="btn" href="https://on.soundcloud.com/DPP2Xs65O6r3kTinta" target="_blank">SoundCloud</a>
+
+<a class="btn" href="https://www.instagram.com/cairo.spk" target="_blank">Instagram</a>
+
+<a class="btn" href="https://www.tiktok.com/@cairo.spk" target="_blank">TikTok</a>
+
 </header>
 
-<p>👀 Visitas no site: <span id="count">0</span></p>
-
-<script>
-fetch('https://api.countapi.xyz/hit/kairomusic-2026/visitas')
-  .then(res => res.json())
-  .then(res => document.getElementById('count').innerText = res.value)
-  .catch(err => console.log('Erro ao carregar contador', err));
-</script>
+<!-- NOVO CONTADOR DE VISITAS -->
+<div class="visitas">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=kairo-music.github.io" alt="visitors"/>
+</div>
 
 <footer>
-    © 2026 Kairo Music - Todos os direitos reservados
+
+© 2026 Kairo Music - Todos os direitos reservados
+
 </footer>
 
 </body>
